@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+body{
+	font-family: sans-serif;
+	color: #2dff51;
+}
+
+/*Definindo estilo de fonte*/
+.negrito{
+    font-weight: bold;
+}
+
+/*Definindo estilo dos select*/
+.select{
+    width: 173px;
+    height: 26px;
+    margin: 2px 2px 2px 2px;
+}
+
+/*Definindo estilo das input*/
+.inputtxt{
+    width: 270px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+/*Definindo o tamanho da textarea*/
+.textarea{
+    width: 270px;
+    margin: 2px 2px 2px 2px;
+    margin-left: 2px;
+}
+
+/*Definindo o tamanho do submit*/
+.btn{
+    width: 100px;
+    height: 25px;
+    font-size: x-small;
+    background-color: #2dff51;
+    border-radius: 9px;
+    border: 1px solid #CCC;
+    margin: 2px 2px 2px 2px;
+}
+
+#corpo{
+    width: 1245px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    margin-top: 20px;
+    margin-left: 45px;
+    background-color: white;
+    position: absolute;
+}
+
+#titulo{
+    width: 1239px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    text-align: center;
+
+}
+
+/*campo texto do cpf  */
+#txt-cpf{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Entrada do cpf  */
+#cmp-cpf{
+     width: 963px;
+     height: 30px;
+     border-style:solid;
+     border-width: thin;
+     border-color: black;
+     margin: 2px 2px 2px 2px;
+     background-color: white;
+     float: left;
+ }
+
+/*Campo texto nome*/
+#txt-nome{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Entrada do nome*/
+#cmp-nome{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Campo texto endereço*/
+#txt-endereco{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Entrada do endereço*/
+#cmp-endereco{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Campo texto Cidade*/
+#txt-cidade{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Entrada da Cidade*/
+#cmp-cidade{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+/*Campo texto Sexo*/
+#txt-sexo{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Select sexo*/
+#cmp-sexo{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Campo texto telefone*/
+#txt-tel{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+/*Entrada de dados telefone*/
+#cmp-tel{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+/*Campo texto e-mail*/
+#txt-email{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+/*Campo entrada de dados e-mail*/
+#cmp-email{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#txt-senha{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#cmp-senha{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#txt-promocoes{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#cmp-promocoes{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+#txt-observacoes{
+    width: 270px;
+    height: 85px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 1px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#cmp-observacoes{
+    width:963px;
+    height: 85px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#txt-vazio{
+    width: 270px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}
+
+#cmp-vazio{
+    width:963px;
+    height: 30px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    float: left;
+}

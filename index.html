@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="js/valida_mascara.js" language="javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.2.js"></script>
+    <title>Cadastro de Cliente</title>
+</head>
+<body>
+    <form id="cadastro" name="cadastro" method="post" onSubmit="return validaCampo(); return false;">
+    <div id="corpo">
+    <div id="titulo"><span class="negrito">Cadastro de Clientes</span></div>
+    <div id="txt-cpf"><span class="negrito">CPF:</span></div>
+    <div id="cmp-cpf"><input type="text" name="cpf" id="cpf" maxlength="14" onBlur="javascript: validarCPF(this.value);" onKeyPress="javascript: mascara(this, cpf_mask);"placeholder="Informe somente numero do cpf" class="inputtxt"></div>
+    <div id="txt-nome"><span class="negrito">Nome:</span></div>
+    <div id="cmp-nome"><input type="text" name="nome" id="nome" maxlength="80" onKeyPress="ConverteMaiuscula(this)"; placeholder="Informe o nome completo" class="inputtxt"></div>
+    <div id="txt-endereco"><span class="negrito">Endereço:</span></div>
+    <div id="cmp-endereco"><input type="text" name="endereco" id="endereco" maxlength="80" onKeyPress="ConverteMaiuscula(this)"; placeholder="Informe o Endereco" class="inputtxt"></div>
+    <div id="txt-cidade"><span class="negrito">Cidade:</span></div>
+    <div id="cmp-cidade"><input type="text" name="cidade" id="cidade" maxlength="50" onKeyPress="ConverteMaiuscula(this)"; placeholder="Informe a Cidade" class="inputtxt"></div>
+    <div id="txt-sexo"><span class="negrito">Sexo:</span></div>
+    <div id="cmp-sexo">
+        <select name="sexo" id="sexo" class="select">
+            <option>Escolher Sexo</option>
+            <option value=01>Masculino</option>
+            <option value="02">Feminino</option>
+        </select></div>
+    <div id="txt-tel"><span class="negrito">Telefone:</span></div>
+    <div id="cmp-tel"><input type="tel" name="telefone" id="telefone" OnkeyUp="mascaraTelefone(this);" placeholder="Informe o telefone" class="inputtxt"></div>
+    <div id="txt-email"><span class="negrito">E-mail:</span></div>
+    <div id="cmp-email"><input type="email" name="email" id="email" maxlength="40" onChange="ValidaEmail(this)" placeholder="Informe o e-mail" class="inputtxt"></div>
+    <div id="txt-senha"><span class="negrito">Senha:</span></div>
+    <div id="cmp-senha"><input type="password" name="senha" id="senha" maxlength="15" placeholder="Informe a senha" class="inputtxt"></div>
+    <div id="txt-promocoes"><span class="negrito">Receber Promoções:</span></div>
+    <div id="cmp-promocoes"><input type="checkbox" name="promocoes" id="promocoes" value="sim">Sim
+                            <input type="checkbox" name="promocoes" id="promocoes" value="nao">Não</div>
+        <div id="text-abaixo"></div>
+    <div id="txt-observacoes"><span class="negrito">Obs:</span></div>
+    <div id="cmp-observacoes"><textarea name="observacoes" id="observacoes" rows="4" cols="117" style="width: 99%;height: 88%;margin: 2px;" placeholder="Insira algo que ache que possa nos ajudar a melhorar."></textarea> </div>
+    <div id="txt-vazio"><span class="negrito" name="vazio" id="vazio"></span> </div>
+    <div id="cmp-vazio"><input type="submit" value="Enviar" name="concluir" id="concluir" class="btn" onclick="validaCampo(this)"/>
+                        <input type="reset" value="Limpar Campos" name="limpar"  id="limpar"  class="btn"/></div>
+    </div>
+    </form>
+
+    <script>
+        $( "input" ).on( "click", function() {
+            $( "#text-abaixo" ).html( $( "input:checked" ).val() + " foi selecionado!" );
+        });
+    </script>
+</body>
+</html>
