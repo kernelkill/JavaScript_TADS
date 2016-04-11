@@ -1,0 +1,88 @@
+<!--
+* Created by kernelkill on 10/04/16.
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro Cliente</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="validacoes.js"></script>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<div id="conteudo">
+			<form name ="cadastro" onsubmit="return valida_form(this);">
+				<table border="1px solid">
+					<tr>
+						<td colspan= "3">
+							<h3 style="text-align:center" id="campo">Cadastro de Cliente</h3>
+						</td>
+					</tr><tr>		
+						<td id="campo">CPF:*</td>
+						<td colspan= "2">
+							<input type="text" name="cpf" id="cpf" size="14" onblur="javascript: validarCPF(this.value);" onkeypress="javascript: mascara(this, cpf_mask);"  maxlength="14" />
+						</td>
+					</tr><tr>
+						<td id="campo">Nome:*</td>
+						<td colspan= "2">
+							<input type ="text" id="nome" size="80" onblur="UPM(this)" onKeypress="UPM(this)" required=""/>
+						</td>
+					</tr><tr>
+						<td id="campo">Endereço:*</td>
+						<td colspan= "2">
+							<input type ="text" id="endereco" size="80" onblur="UPM(this)" onKeypress="UPM(this)" required=""/>
+						</td>
+					</tr><tr>
+						<td id="campo">Cidade:*</td>
+						<td colspan= "2">
+							<input type ="text" id="cidade" size="50" onblur="UPM(this)" onKeypress="UPM(this)" required=""/>
+						</td>
+					</tr><tr>
+						<td id="campo">Sexo:*</td>
+						<td colspan= "2">
+							<select name="sel" onblur="valida();" id="campo">
+								<option value="">---Escolher Sexo---</option>
+								<option value="Masculino">Masculino</option>
+								<option value="Feminino">Feminino</option>
+							</select>
+						</td>
+					</tr><tr>
+						<td id="campo">Telefone:</td>
+						<td colspan= "2">
+							<input type ="tel" name="telefone" id="telefone" onkeypress="Mascara(this);" size="15" maxlength="14" />
+						</td>
+					</tr><tr>
+						<td id="campo">E-mail(Login):*</td>
+						<td colspan= "2">
+							<input type ="email" id="email" size="40" required=""/>
+						</td>
+					</tr><tr>
+						<td id="campo">Senha:*</td>
+						<td colspan= "2">
+							<input type ="password" id="senha" size="15" onKeypress="return LetraNumero(event)" minlength="6" required=""/>
+						</td>
+					</tr><tr>
+						<td id="campo">Receber notificações:*</td>
+						<td id="checkbox">
+							<input type="checkbox" id="sim" name="receber" value="sim" onclick="MostraTexto();ValidaCheckBox(this.id)"/>Sim
+							<input type="checkbox" id="nao" name="receber" value="nao" onclick="TiraTexto()"/>Não
+						</td>
+						<td id="notificacao"></td>
+					</tr><tr>
+						<td id="campo">Obs:</td>
+						<td colspan= "2">
+							<textarea type ="text" name="obs" size="200" maxlength="200"></textarea>
+						</td>
+					</tr><tr>
+						<td colspan= "3" >
+							<input type="submit" value="Enviar" id="campo" />
+							<input type="button" value="Valores" onclick="MostrarValores()" id="campo"/>
+                            <input type="reset" value="Limpa Campo" id="campo"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

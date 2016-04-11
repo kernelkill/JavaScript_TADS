@@ -1,0 +1,35 @@
+/**
+ * Created by kernelkill on 10/04/16.
+ */
+html, body {
+	margin: 0 auto;
+	display:table;
+}
+
+#campo{
+    font-family: Comic Sans MS, sans-serif;
+    font-style: italic;
+}
+
+#conteudo{
+	margin-top:30%;
+	height: 300px;
+	width:500px;
+
+}
+#notificacao{
+	border:1px solid black;
+	color: #3971ff;
+}
+#checkbox{
+	width:150px;
+	height:60px;
+    font-family: Comic Sans MS, sans-serif;
+    font-style: italic;
+}
+tr{
+	border:1px solid;
+}
+td{
+	border:1px solid;
+}
