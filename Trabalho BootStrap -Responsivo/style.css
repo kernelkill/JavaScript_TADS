@@ -1,0 +1,25 @@
+
+textarea {
+    resize: none;
+}
+html,body{
+    background-color: #3971ff;
+    color:white;
+}
+h3{
+    text-align:center;
+}
+.form{
+    margin: 0 auto;
+    display:table;
+}
+.red{
+    color:red;
+}
+.span4{
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: medium;
+    color: #13fff8;
+
+}
+
